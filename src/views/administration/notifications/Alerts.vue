@@ -218,6 +218,8 @@ export default {
                           <div v-if="!isScheduled" class="list-group-item"><b-form-checkbox value="VULNERABILITY_RETRACTED">VULNERABILITY_RETRACTED</b-form-checkbox></div>
                           <div v-if="isScheduled" class="list-group-item"><b-form-checkbox value="NEW_POLICY_VIOLATIONS_SUMMARY">NEW_POLICY_VIOLATIONS_SUMMARY</b-form-checkbox></div>
                           <div v-if="isScheduled" class="list-group-item"><b-form-checkbox value="NEW_VULNERABILITIES_SUMMARY">NEW_VULNERABILITIES_SUMMARY</b-form-checkbox></div>
+                          <div v-if="!isScheduled" class="list-group-item"><b-form-checkbox value="PROJECT_REANALYZED">PROJECT_REANALYZED</b-form-checkbox></div>
+                          <div v-if="!isScheduled" class="list-group-item"><b-form-checkbox value="PROJECT_REANALYZED_FAILED">PROJECT_REANALYZED_FAILED</b-form-checkbox></div>
                         </b-form-checkbox-group>
                       </div>
                       <div class="list-group" v-if="this.scope === 'SYSTEM'">
